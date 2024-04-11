@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+p{ 
+    font-family:"Roboto";
+}
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+    
+body {
+    background-color: #F3E5D8;
+    transition: 0.3s;
+}
+
+h1,h2,h3,h4 {
+    font-family: "DM Serif Display";
+    transition: 0.3s;
+}
+
+h2,h3 {
+    color: #7E4333;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 20px;
+}
+p,li,td {
+    font-family: "DM Sans";
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 300;
+}
+
+nav {
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #255538;
+}
+
+nav #logo {
+    color: white;
+    margin: 0;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+ nav a {
+    color: white;
+}
+
+nav #dark-mode {
+    margin-left: 10px;
+    align-self: center;
+    height: 34px;
+}
+
+header {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/principal.jpg);
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+
+header h1 {
+    color: white;
+    font-size: 64px;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1100px;
+    width: 100%;
+    margin: 40px auto 0 auto;
+}
+
+main h2 {
+    margin-top: 40px;
+}
+
+main div.grid-container {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+main div.grid-container div.recipe {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+main div.grid-container div.recipe:hover {
+    transform: scale(1.1);
+}
+
+
+main div.grid-container div.recipe a {
+    text-decoration: none;
+}
+
+main div.grid-container div.recipe img {
+    height: 248px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+main div.grid-container div.recipe ul {
+    color: black;
+}
+footer {
+    padding: 10px 20px;
+    margin: 20px 20px 0 20px;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #255538;
+    height: 78px;
+}
+
+footer .footer {
+    color: white;
+    margin: 0;
+}
+
+.dark-mode{
+    color: white;
+    background-color: black;
+}
+
+.dark-mode h3 {
+    color: white;
+}
+.dark-mode li {
+    color: white;
+}
+.dark-mode h2 {
+    color: white;
+}
+.dark-mode h3 {
+    color: white;
+}
+.dark-mode div.grid-container div.recipe {
+    color: white;
+    background-color: #2F2F2F;
+}
+
+@media (max-width: 700px) {
+    main div.grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    main div.grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+header {
+    background-image: url(../images/principal.png);
+}
